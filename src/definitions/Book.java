@@ -54,6 +54,63 @@ public class Book {
         return this.nameOfBook;
     }
 
+    //2. The setter method : used to write the value of a private field.
+    // Transformer methods / Mutator Methods
+
+    /**
+     * This method will change the book name
+     *
+     * @param nameOfBook The name of the book that you want to given
+     */
+
+    public void setNameOfBook(String nameOfBook) {
+        this.nameOfBook = nameOfBook;
+    }
+
+    /**
+     * This method returns the name of the author of the book.
+     *
+     * @return The name of author of the book.
+     */
+
+    public String getAuthorOfBook() {
+        return this.authorOfBook;
+    }
+
+    /**
+     * This method will change the author name of book
+     *
+     * @param authorOfBook The author name of the book that you want to given
+     */
+
+    public void setAuthorOfBook(String authorOfBook) {
+        this.authorOfBook = authorOfBook;
+    }
+
+    /**
+     * This method returns the ISBN number of the book
+     *
+     * @return ISBN number of the book
+     */
+
+    public String getThirteenDigitISBNNumberOfBook() {
+        return this.thirteenDIgitsISBNNumberOfBook;
+    }
+
+    /**
+     * This method will change the ISBN number of book
+     *
+     * @param thirteenDigitISBNNumberOfBook ISBN number of the book that you want to given
+     */
+
+    public void setThirteenDigitISBNNumberOfBook(String thirteenDigitISBNNumberOfBook) {
+        this.thirteenDIgitsISBNNumberOfBook = thirteenDigitISBNNumberOfBook;
+    }
+
+    public void getData() {
+        System.out.println("Book Name: " + nameOfBook);
+    }
+
 
 
 }
