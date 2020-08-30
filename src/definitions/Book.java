@@ -31,4 +31,29 @@ public class Book {
         thirteenDIgitsISBNNumberOfBook = "5790760157273";
 
     }
+
+    // 2. Parameterized constructor : it has some parameters.
+    public Book(String nameOfBook, String authorOfBook, String thirteenDigitISBNNumberOfBook) {
+        this.nameOfBook = nameOfBook;
+        this.authorOfBook = authorOfBook;
+        this.thirteenDIgitsISBNNumberOfBook = thirteenDigitISBNNumberOfBook;
+    }
+    public Book(String nameOfBook){
+        this.nameOfBook = nameOfBook;
+    }
+    //1. The getter method : it is used to read the value of a private field.
+    // Observer methods / Accessor Methods
+
+    /**
+     * This method returns the name of the book.
+     *
+     * @return The name of the book.
+     */
+
+    public String getNameOfBook() {
+        return this.nameOfBook;
+    }
+
+
+
 }
