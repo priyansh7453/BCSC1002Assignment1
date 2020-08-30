@@ -111,6 +111,31 @@ public class Book {
         System.out.println("Book Name: " + nameOfBook);
     }
 
+    //The toString() method
+    @Override
+    public String toString() {
+        return "Book{" +
+                "nameOfBook='" + nameOfBook + '\'' +
+                ", authorOfBook='" + authorOfBook + '\'' +
+                ", thirteenDigitISBNNumberOfBook='" + thirteenDIgitsISBNNumberOfBook + '\'' +
+                '}';
+    }
+
+    //The equals() and hashcode() methods
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Book)) return false;
+        Book book = (Book) o;
+        return Objects.equals(getNameOfBook(), book.getNameOfBook()) &&
+                Objects.equals(getAuthorOfBook(), book.getAuthorOfBook()) &&
+                Objects.equals(getThirteenDigitISBNNumberOfBook(), book.getThirteenDigitISBNNumberOfBook());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getNameOfBook(), getAuthorOfBook(), getThirteenDigitISBNNumberOfBook());
+    }
 
 
 }
