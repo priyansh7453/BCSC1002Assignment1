@@ -6,7 +6,7 @@
    * */
   package definitions;
 
-   import java.util.Objects;
+   import java.util.*;
 
 public class Book {
 
@@ -21,4 +21,14 @@ public class Book {
     private String nameOfBook;
     private String authorOfBook;
     private String thirteenDIgitsISBNNumberOfBook;
+
+    // Constructor method : used to initialise the values(field) of an objects.
+
+    // 1. non-parameterized constructor : it has no parameter.
+    public Book(){
+        nameOfBook = "beginning programing with java";
+        authorOfBook = "barry burd ";
+        thirteenDIgitsISBNNumberOfBook = "5790760157273";
+
+    }
 }
