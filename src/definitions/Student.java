@@ -1,10 +1,19 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
+ *  User: Priyansh Kushwaha
+ *  Date: 30/08/20
  *  Time: 3:49 PM
  *  File Name : Student.java
  * */
 package definitions;
 
-public class Student {
+import java.util.Arrays;
+import java.util.Objects;
+
+    public class Student {
+        definitions.Student studentObject = new definitions.Student();
+        private String studentFirstName, studentMiddleName, studentLastName;
+        private long universityRollNumber;
+        private int numberOfBooksIssued;
+        private Book[] name;
+
 }
