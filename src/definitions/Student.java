@@ -142,5 +142,54 @@ public class Student {
          * @return All the name of books issued by the student.
          */
 
+        public Book[] getName() {
+                return this.name;
+        }
+
+        /**
+         * This method sets the name of books issued by the student.
+         *
+         * @param name The name of books issued by the student that you want to given.
+         */
+
+        public void setName(Book[] name) {
+                this.name = name;
+        }
+
+
+        //The toString() method
+        @Override
+        public String toString() {
+                return "Student{" +
+                        "studentFirstName='" + studentFirstName + '\'' +
+                        ", studentMiddleName='" + studentMiddleName + '\'' +
+                        ", studentLastName='" + studentLastName + '\'' +
+                        ", universityRollNumber=" + universityRollNumber +
+                        ", numberOfBooksIssued=" + numberOfBooksIssued +
+                        ", name=" + Arrays.toString(name) +
+                        '}';
+        }
+
+        //The equals() and hashcode() methods
+        @Override
+        public boolean equals(Object o) {
+                if (this == o) return true;
+                if (!(o instanceof Student)) return false;
+                Student student = (Student) o;
+                return getUniversityRollNumber() == student.getUniversityRollNumber() &&
+                        getNumberOfBooksIssued() == student.getNumberOfBooksIssued() &&
+                        Objects.equals(getStudentFirstName(), student.getStudentFirstName()) &&
+                        Objects.equals(getStudentMiddleName(), student.getStudentMiddleName()) &&
+                        Objects.equals(getStudentLastName(), student.getStudentLastName()) &&
+                        Arrays.equals(getName(), student.getName());
+        }
+
+        @Override
+        public int hashCode() {
+                int result = Objects.hash(getStudentFirstName(), getStudentMiddleName(), getStudentLastName(), getUniversityRollNumber(), getNumberOfBooksIssued());
+                result = 31 * result + Arrays.hashCode(getName());
+                return result;
+        }
+
 
 }
