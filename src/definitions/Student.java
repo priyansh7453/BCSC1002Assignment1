@@ -101,8 +101,45 @@ public class Student {
         }
         /**
          * This method sets the last name of student.
+         * @param studentLastName The Last Name of student that you want to set.
+         */
+        public long getUniversityRollNumber() {
+                return this.universityRollNumber;
+        }
+
+        /**
+         * This method sets the university roll number of student.
          *
-         * @param studentLastName The last name of the student that you want to set.
+         * @param universityRollNumber The university roll number of the student that you want to set.
+         */
+        public void setUniversityRollNumber(long universityRollNumber) {
+                this.universityRollNumber = universityRollNumber;
+        }
+
+        /**
+         * This method returns the number of books issued by the student.
+         *
+         * @return The number of books issued by the student.
+         */
+
+        public int getNumberOfBooksIssued() {
+                return this.numberOfBooksIssued;
+        }
+
+        /**
+         * This method sets the number of books issued by the student.
+         *
+         * @param numberOfBooksIssued The number of books issued by the student that you want to given.
+         */
+
+        public void setNumberOfBooksIssued(int numberOfBooksIssued) {
+                this.numberOfBooksIssued = numberOfBooksIssued;
+        }
+
+        /**
+         * This method returns all the name of books issued by the student.
+         *
+         * @return All the name of books issued by the student.
          */
 
 
