@@ -8,12 +8,21 @@ package definitions;
 
 import java.util.Arrays;
 import java.util.Objects;
+import java.util.Scanner;
 
-    public class Student {
+public class Student {
         definitions.Student studentObject = new definitions.Student();
         private String studentFirstName, studentMiddleName, studentLastName;
         private long universityRollNumber;
         private int numberOfBooksIssued;
-        private Book[] name;
 
+    public static void main(String[] args) {
+        Student currentlyInteractStudent;
+        Scanner scannerObject = new Scanner(System.in);
+        int studentInput;
+
+        Library libraryObject = new Library();
+        Student studentObject = new Student();
+        Book bookObject = new Book();
+    }
 }
